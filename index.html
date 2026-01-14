@@ -26,20 +26,30 @@
 
     <header class="bg-blue-900 text-white py-20 px-6">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-            <div class="w-48 h-48 rounded-full border-4 border-blue-400/30 overflow-hidden bg-slate-200 shrink-0">
-                <img src="profile.jpg" alt="Vanamala Venkataswamy" class="w-full h-full object-cover">
+            
+            <div class="relative shrink-0">
+                <div class="w-48 h-48 rounded-full border-4 border-blue-400/30 overflow-hidden bg-slate-200 shadow-2xl">
+                    <img 
+                        src="profile.jpg" 
+                        alt="Vanamala Venkataswamy" 
+                        class="w-full h-full object-cover"
+                        onerror="this.src='https://ui-avatars.com/api/?name=Vanamala+Venkataswamy&background=0D47A1&color=fff&size=512'"
+                    >
+                </div>
+                <div class="absolute -bottom-2 -right-2 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full border-2 border-blue-900 shadow-lg">
+                    Ph.D. CS
+                </div>
             </div>
             
-            <div>
-                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">System Architect for the AI Era</h1>
-                <p class="text-xl text-blue-200 max-w-3xl mb-6">
-                    12+ years of experience building large-scale distributed computing, HPC, and data orchestration systems for simulation, AI, and research workloads.
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">Vanamala Venkataswamy, Ph.D.</h1>
+                <p class="text-xl text-blue-200 max-w-3xl mb-6 font-medium">
+                    Technical Director & AI Advisor specializing in Distributed Systems, HPC, and Generative AI[cite: 1, 16, 19, 63].
                 </p>
-                <div class="flex flex-wrap gap-3">
-                    <span class="bg-blue-800 px-3 py-1 rounded-full text-sm border border-blue-700">Distributed Systems </span>
-                    <span class="bg-blue-800 px-3 py-1 rounded-full text-sm border border-blue-700">Generative AI [cite: 10]</span>
-                    <span class="bg-blue-800 px-3 py-1 rounded-full text-sm border border-blue-700">HPC & Cloud [cite: 6]</span>
-                    <span class="bg-blue-800 px-3 py-1 rounded-full text-sm border border-blue-700">MLOps [cite: 14]</span>
+                <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                    <span class="bg-blue-800/50 px-3 py-1 rounded-full text-sm border border-blue-700/50">Distributed Systems [cite: 3, 20]</span>
+                    <span class="bg-blue-800/50 px-3 py-1 rounded-full text-sm border border-blue-700/50">Generative AI [cite: 10, 18, 26]</span>
+                    <span class="bg-blue-800/50 px-3 py-1 rounded-full text-sm border border-blue-700/50">Cloud-Native HPC [cite: 4, 9, 25]</span>
                 </div>
             </div>
         </div>
